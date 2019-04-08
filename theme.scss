@@ -1,0 +1,212 @@
+/*!
+ * Hexified
+ *
+ * License: MIT
+ */
+$sol-yellow:  #b58900;
+$sol-orange:  #cb4b16;
+$sol-red:     #dc322f;
+$sol-magenta: #d33682;
+$sol-violet:  #6c71c4;
+$sol-blue:    #268bd2;
+$sol-cyan:    #2aa198;
+$sol-green:   #859900;
+
+$hex-Base0:  #839496;
+$hex-Base01: #586e75;
+$hex-Base02: #25343a;
+$hex-Base03: #002b36;
+
+
+::-webkit-input-placeholder {
+	color: rgba($hex-Base0, 0.9);
+	font-style: italic;
+}
+::placeholder {
+	color: rgba($hex-Base0, 0.9);
+	opacity: 1;/* fix opacity in Firefox */
+}
+::-webkit-scrollbar-thumb:vertical { background: $hex-Base03 }
+
+* { border-color: $hex-Base01 !important }
+html {
+	scrollbar-track-color: $hex-Base02;
+	scrollbar-face-color: $hex-Base03;
+}
+body { color: $hex-Base0 }
+#loading, #windows {
+	background-color: $hex-Base02;
+	.logo { display: none }
+	.logo-inverted { display: inline-block }
+}
+
+.irc-monospace, pre, code, kbd {
+	color: #ddd;
+	background-color: #444;
+	border-color: #666;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+.btn-reconnect {
+	background: $sol-red;
+	color: $hex-Base0;
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+}
+
+#chat button.menu, #viewport .lt, #viewport .rt {
+	color: $hex-Base0;
+}
+
+.context-menu-item:focus, .context-menu-item:hover, .textcomplete-item:hover, .textcomplete-menu .active,
+#chat .userlist .user.active, #sidebar, #footer {
+	color: $hex-Base0;
+	background-color: $hex-Base03;
+}
+
+#sidebar {
+	.logo-container { padding-top: 5px }
+	.logo-inverted { height: 35px }
+	.chan {
+		&.lobby { color: $sol-blue }
+		&.channel .close { display: none }
+		&.active, &:hover { background-color: $hex-Base02 }
+	}
+	#footer {
+		height: 43px;
+		line-height: 43px;
+		button:hover { background-color: $hex-Base02 }
+	}
+}
+#windows { 
+	.window.active { background: $hex-Base02 }
+	#chat {
+		.unread-marker:before, .date-marker:before { border-top: 1px solid $sol-cyan }
+		.unread-marker-text:before, .date-marker-text:before {
+			color: $sol-cyan;
+			background-color: $hex-Base02;
+		}
+		.mode .content, .time, .topic .content, .condensed .content,
+		.unhandled .from, .topic_set_by .content { color: $hex-Base0 }		
+		.header {
+			.topic, .title { 
+				font-size: 13px;
+				color: $hex-Base0;
+			}
+			&:hover {
+				height: fit-content;
+				overflow: visible;
+				word-break: unset;
+				span.topic {
+					padding-top: 14px;
+					padding-bottom: 14px;
+					line-height: 18px;
+					word-break: unset;
+				}
+			}
+		}
+		.userlist {
+			font-size: 13px;
+			line-height: 1.0;
+			background-color: $hex-Base02;
+			.count { background-color: inherit }
+			.user-mode {
+				margin-bottom: 0px !important;
+				> span { margin-bottom: 2px }
+			}
+		}
+		.messages .msg {
+			font-size: 13px;
+			line-height: 1.0;
+			color: $hex-Base0;
+		}
+		i.hostmask {
+			font-size: 90%;
+			opacity: 0.7;
+		}
+		.count::before, #form #submit, #form #upload, #chat button.menu, #viewport .lt, #viewport .rt { color: $hex-Base0 }
+		.userlist .search, #windows #form .input {
+			border: 0;
+			color: $hex-Base0;
+		}		
+		&.colored-nicks .user {
+			&.color-1,  &.color-18 { color: $sol-cyan    }
+			&.color-2,  &.color-18 { color: $sol-green   }
+			&.color-3,  &.color-19 { color: $sol-red     }
+			&.color-4,  &.color-20 { color: $sol-orange  }
+			&.color-5,  &.color-21 { color: $sol-blue    }
+			&.color-6,  &.color-22 { color: $sol-cyan    }
+			&.color-7,  &.color-23 { color: $sol-violet  }
+			&.color-8,  &.color-24 { color: $sol-magenta }
+			&.color-9,  &.color-25 { color: $sol-blue    }
+			&.color-10, &.color-26 { color: $sol-violet  }
+			&.color-11, &.color-27 { color: $sol-red     }
+			&.color-12, &.color-28 { color: $sol-yellow  }
+			&.color-13, &.color-29 { color: $sol-magenta }
+			&.color-14, &.color-30 { color: $sol-green   }
+			&.color-15, &.color-31 { color: $sol-yellow  }
+			&.color-16, &.color-32 { color: $sol-orange  }
+		}
+		.msg.motd .text, .toggle-content { background-color: $hex-Base03 }
+		.toggle-content, .toggle-text .body, .toggle-type-error { color: $hex-Base0 }
+		.channel {
+			.message.highlight .time { color: $hex-Base0 }
+			.highlight .toggle-content { background-color: $hex-Base02 }
+			.msg.highlight {
+				background-color: unset;
+				border-left: unset;
+				margin-left: 5px;
+			}
+		}
+		.show-more .btn {
+			background: rgba($hex-Base01, 0.3);
+			color: $hex-Base0;
+			border: 0;
+			border-radius: 0;
+			text-transform: uppercase;
+			transition: background 0.2s;
+			&:hover { background: $sol-cyan }
+		}
+		table {
+			&.channel-list td { color: $hex-Base01 }
+			&.channel-list th, &.ban-list th,
+			&.channel-list td, &.ban-list td { border-bottom-color: $hex-Base03 }
+		}
+		.self .text { color: $sol-yellow }
+		.message .from .user {
+			&::before { content: "<" }
+			&::after { content: ">" }
+		}
+		.msg.highlight, .msg.highlight .user { color: $sol-magenta }
+		.user-mode.op:before, .user-mode.half-op:before, .user-mode.normal:before { display: none }
+		.quit .content { color: $sol-violet }
+		.join .content { color: $sol-cyan }
+		.action {
+			.text { color: $hex-Base0 }
+			.content { font-style: italic }
+		}
+	}
+	#form {
+		background-color: inherit;
+		#input, #submit, #upload { color: $hex-Base0 }
+	}
+}
+#context-menu, .textcomplete-menu {background-color: $hex-Base02 }
+.context-menu-item, .textcomplete-item a { color: $hex-Base0 }
+.context-menu-item, .textcomplete-item { transition: none }
+.context-menu-divider {background-color: $hex-Base01 }
+
+@media (max-width: 768px) {
+	#sidebar-overlay { background: rgba(0, 0, 0, 0.8) }
+	#chat .userlist {position: unset }
+}
+@media (min-width: 480px) {
+	#chat .from {
+		width: 120px;
+		padding-left: unset;
+		-webkit-mask-image: linear-gradient(270deg, transparent, #000 8px);
+		mask-image: linear-gradient(270deg, transparent, #000 8px);
+	}
+}
