@@ -243,7 +243,7 @@ body {
 #windows #chat .msg.highlight, #windows #chat .msg.highlight .user {
   color: #d33682;
 }
-#windows #chat .user-mode.op:before, #windows #chat .user-mode.half-op:before, #windows #chat .user-mode.normal:before {
+#windows #chat .user-mode.op:before, #windows #chat .user-mode.half-op:before, #windows #chat .user-mode.voice:before, #windows #chat .user-mode.normal:before {
   display: none;
 }
 #windows #chat .quit .content {
