@@ -1,5 +1,5 @@
 <h1 align="center">
-	Solarized theme for The Lounge
+	Hexified theme for The Lounge
 </h1>
 
 <h3 align="center">
