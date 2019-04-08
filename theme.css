@@ -112,6 +112,9 @@ body {
   height: fit-content;
   overflow: visible;
   word-break: unset;
+  position: absolute;
+  z-index: 1000;
+  background: #25343a;
 }
 #windows #chat .header:hover span.topic {
   padding-top: 14px;
