@@ -109,6 +109,7 @@ body {
   color: #839496;
 }
 #windows #chat .header:hover {
+  width: 100%;
   height: fit-content;
   overflow: visible;
   word-break: unset;
