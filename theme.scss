@@ -180,7 +180,7 @@ body { color: $hex-Base0 }
 			&::after { content: ">" }
 		}
 		.msg.highlight, .msg.highlight .user { color: $sol-magenta }
-		.user-mode.op:before, .user-mode.half-op:before, .user-mode.normal:before { display: none }
+		.user-mode.op:before, .user-mode.half-op:before, .user-mode.voice:before, .user-mode.normal:before { display: none }
 		.quit .content { color: $sol-violet }
 		.join .content { color: $sol-cyan }
 		.action {
