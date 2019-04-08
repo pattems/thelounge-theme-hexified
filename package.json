@@ -1,0 +1,22 @@
+{
+  "name": "thelounge-theme-hexified",
+  "version": "0.1.5",
+  "description": "Somtething like Solarized",
+  "main": "package.json",
+  "thelounge": {
+    "name": "Hexified",
+    "type": "theme",
+    "css": "theme.css"
+  },
+  "license": "MIT",
+	"homepage": "https://github.com/pattems/thelounge-theme-hexified",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pattems/thelounge-theme-hexified.git"
+  },
+  "keywords": [
+    "thelounge",
+    "thelounge-theme",
+    "Solarized"
+  ]
+}
