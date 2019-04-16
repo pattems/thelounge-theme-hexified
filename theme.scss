@@ -107,7 +107,7 @@ body { color: $hex-Base0 }
 					padding-bottom: 14px;
 					line-height: 18px;
 					word-break: unset;
-				}
+				-webkit-mask-image: unset;
 			}
 		}
 		.userlist {

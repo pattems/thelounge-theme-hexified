@@ -301,3 +301,8 @@ body {
     mask-image: linear-gradient(270deg, transparent, #000 8px);
   }
 }
+@media (max-width: 479px) {
+  #chat .channel .msg.highlight .content {
+    border-left: unset;
+  }
+}
