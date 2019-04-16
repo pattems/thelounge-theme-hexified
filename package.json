@@ -1,22 +1,26 @@
 {
-  "name": "thelounge-theme-hexified",
-  "version": "1.0.0",
-  "description": "Somtething like Solarized",
-  "main": "package.json",
-  "thelounge": {
-    "name": "Hexified",
-    "type": "theme",
-    "css": "theme.css"
-  },
-  "license": "MIT",
+	"name": "thelounge-theme-hexified",
+	"version": "1.0.1",
+	"description": "Somtething like Solarized",
+	"main": "package.json",
+	"thelounge": {
+		"name": "Hexified",
+		"type": "theme",
+		"css": "theme.css"
+	},
+	"license": "MIT",
 	"homepage": "https://github.com/pattems/thelounge-theme-hexified",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pattems/thelounge-theme-hexified.git"
-  },
-  "keywords": [
-    "thelounge",
-    "thelounge-theme",
-    "Solarized"
-  ]
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pattems/thelounge-theme-hexified.git"
+	},
+	"keywords": [
+		"thelounge",
+		"thelounge-theme",
+		"Solarized",
+		"dark"
+	]
+	"bugs": {
+		"url": "https://github.com/pattems/thelounge-theme-hexified/issues"
+	}
 }
