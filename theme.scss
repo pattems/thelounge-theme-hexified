@@ -11,12 +11,10 @@ $sol-violet:  #6c71c4;
 $sol-blue:    #268bd2;
 $sol-cyan:    #2aa198;
 $sol-green:   #859900;
-
 $hex-Base0:  #839496;
 $hex-Base01: #586e75;
 $hex-Base02: #25343a;
 $hex-Base03: #002b36;
-
 
 ::-webkit-input-placeholder {
 	color: rgba($hex-Base0, 0.9);
@@ -89,24 +87,20 @@ body { color: $hex-Base0 }
 			background-color: $hex-Base02;
 		}
 		.mode .content, .time, .topic .content, .condensed .content,
-		.unhandled .from, .topic_set_by .content { color: $hex-Base0 }		
+		.unhandled .from, .topic_set_by .content { color: $hex-Base0 }
 		.header {
-			.topic, .title { 
+			line-height: unset;
+			height: fit-content;
+			span.topic, span.title { 
 				font-size: 13px;
 				color: $hex-Base0;
+				padding-top: 14px;
+				white-space: nowrap;
 			}
-			&:hover {
-				width: 100%;
-				height: fit-content;
-				overflow: visible;
+			span.topic:hover {
+				white-space: unset;
+				padding-bottom: 14px;
 				word-break: unset;
-				z-index: 1000;
-				background: $hex-Base02;
-				span.topic {
-					padding-top: 14px;
-					padding-bottom: 14px;
-					line-height: 18px;
-					word-break: unset;
 				-webkit-mask-image: unset;
 			}
 		}
@@ -124,6 +118,7 @@ body { color: $hex-Base0 }
 			font-size: 13px;
 			line-height: 1.0;
 			color: $hex-Base0;
+			.from { height: 19px; }
 		}
 		i.hostmask {
 			font-size: 90%;
@@ -133,7 +128,7 @@ body { color: $hex-Base0 }
 		.userlist .search, #windows #form .input {
 			border: 0;
 			color: $hex-Base0;
-		}		
+		}
 		&.colored-nicks .user {
 			&.color-1,  &.color-18 { color: $sol-cyan    }
 			&.color-2,  &.color-18 { color: $sol-green   }
@@ -213,3 +208,4 @@ body { color: $hex-Base0 }
 		mask-image: linear-gradient(270deg, transparent, #000 8px);
 	}
 }
+@media (max-width: 479px) { #chat .channel .msg.highlight .content { border-left: unset; } }

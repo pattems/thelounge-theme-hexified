@@ -104,23 +104,21 @@ body {
 #windows #chat .unhandled .from, #windows #chat .topic_set_by .content {
   color: #839496;
 }
-#windows #chat .header .topic, #windows #chat .header .title {
+#windows #chat .header {
+  line-height: unset;
+  height: fit-content;
+}
+#windows #chat .header span.topic, #windows #chat .header span.title {
   font-size: 13px;
   color: #839496;
-}
-#windows #chat .header:hover {
-  width: 100%;
-  height: fit-content;
-  overflow: visible;
-  word-break: unset;
-  z-index: 1000;
-  background: #25343a;
-}
-#windows #chat .header:hover span.topic {
   padding-top: 14px;
+  white-space: nowrap;
+}
+#windows #chat .header span.topic:hover {
+  white-space: unset;
   padding-bottom: 14px;
-  line-height: 18px;
   word-break: unset;
+  -webkit-mask-image: unset;
 }
 #windows #chat .userlist {
   font-size: 13px;
@@ -140,6 +138,9 @@ body {
   font-size: 13px;
   line-height: 1.0;
   color: #839496;
+}
+#windows #chat .messages .msg .from {
+  height: 19px;
 }
 #windows #chat i.hostmask {
   font-size: 90%;
