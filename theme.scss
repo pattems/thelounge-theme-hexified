@@ -11,10 +11,10 @@ $sol-violet:  #6c71c4;
 $sol-blue:    #268bd2;
 $sol-cyan:    #2aa198;
 $sol-green:   #859900;
-$hex-Base0:  #839496;
-$hex-Base01: #586e75;
-$hex-Base02: #25343a;
-$hex-Base03: #002b36;
+$hex-Base0:   #839496;
+$hex-Base01:  #586e75;
+$hex-Base02:  #25343a;
+$hex-Base03:  #002b36;
 
 ::-webkit-input-placeholder {
 	color: rgba($hex-Base0, 0.9);
@@ -208,4 +208,7 @@ body { color: $hex-Base0 }
 		mask-image: linear-gradient(270deg, transparent, #000 8px);
 	}
 }
-@media (max-width: 479px) { #chat .channel .msg.highlight .content { border-left: unset; } }
+@media (max-width: 479px) {
+	#chat .channel .msg.highlight .content { border-left: unset; }
+	.tooltipped::before, .tooltipped::after { display: none !important;	}
+}

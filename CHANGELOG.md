@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.2
+* Don't show tooltips in small (mobile) screens
+
 ## 1.0.1
 
 * Updates to Readme
