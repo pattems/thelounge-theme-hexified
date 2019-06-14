@@ -1,6 +1,6 @@
 {
 	"name": "thelounge-theme-hexified",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Somtething like Solarized",
 	"main": "package.json",
 	"thelounge": {

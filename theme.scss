@@ -89,12 +89,12 @@ body { color: $hex-Base0 }
 		.mode .content, .time, .topic .content, .condensed .content,
 		.unhandled .from, .topic_set_by .content { color: $hex-Base0 }
 		.header {
-			line-height: unset;
-			height: fit-content;
+			line-height: 1.5;
+			height: initial;
 			span.topic, span.title { 
 				font-size: 13px;
 				color: $hex-Base0;
-				padding-top: 14px;
+				padding-top: 13px;
 				white-space: nowrap;
 			}
 			span.topic:hover {
