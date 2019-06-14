@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.4
+* Fix top bar not showing on mobile.
+
 ## 1.0.2
 * Don't show tooltips in small (mobile) screens
 
